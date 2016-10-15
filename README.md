@@ -9,6 +9,7 @@ sample project mentioned in [this blog](https://moelholm.com/2016/10/15/spring-4
 So in the orginal Spring 4.3 sample, the `GreeterService` is coded as
 
 ```java
+// Spring 4.3 Code
 @BusinessService
 public class GreeterService {
  
@@ -25,6 +26,7 @@ public class GreeterService {
 In Genie version it is pretty much the same thing except we don't need the `@BusinessService` annotation:
 
 ```java
+// Genie Code
 import org.osgl.$;
 
 public class GreeterService {
@@ -50,6 +52,7 @@ Now come to the `LocalizedMessage` code:
 In the Spring 4.3 project:
 
 ```java
+// Spring 4.3 Code
 @Autowired
 @Retention(RetentionPolicy.RUNTIME)
 public @interface LocalizedMessage {
@@ -62,6 +65,7 @@ public @interface LocalizedMessage {
 In the Genie version:
 
 ```java
+// Genie Code
 @InjectTag
 @LoadValue(MessageLoader.class)
 @Retention(RetentionPolicy.RUNTIME)
@@ -77,6 +81,7 @@ how Genie should load the local `Message` instance: through the value loader cla
  whose implementation is shown below:
  
 ```java
+// Genie Code
 public class MessageLoader extends ValueLoader.Base<Message> {
 
     @Inject
@@ -96,6 +101,7 @@ dispatching logic using the `InjectionPoint`, in the original Spring 4.3 project
  class:
  
 ```java
+// Spring 4.3 Code
 @Configuration
 public class MessageConfig {
 
@@ -139,6 +145,7 @@ They are all very simple and straightforward.
 Finally here is the `Application` main class:
 
 ```java
+// Genie Code
 public class Application {
 
     @Inject
