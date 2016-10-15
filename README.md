@@ -2,11 +2,14 @@
 
 This example shows how you can use the [Genie](https://github.com/osglworks/java-di) to implement Spring 4.3 Custom annotation Like feature
 
-This project is to using [Genie](https://github.com/osglworks/java-di) rewrite Nicky Moelholm's 
-[spring43-custom-annotations](https://github.com/nickymoelholm/smallexamples/tree/master/spring43-custom-annotations)
-sample project mentioned in [this blog](https://moelholm.com/2016/10/15/spring-4-3-custom-annotations/)  
+Nicky Moelholm has a [blog](https://moelholm.com/2016/10/15/spring-4-3-custom-annotations/) talking about how to 
+customise annotation in Spring 4.3 application. I am curious to see how can I get the samething done using 
+[Genie](https://github.com/osglworks/java-di). So it comes up with this project, which is literally a rewrite of
+Nicky Moelholm's [spring43-custom-annotations](https://github.com/nickymoelholm/smallexamples/tree/master/spring43-custom-annotations) 
+with [Genie](https://github.com/osglworks/java-di) 
+   
 
-So in the orginal Spring 4.3 sample, the `GreeterService` is coded as
+First let's take a look at the `GreeterService` code:
 
 ```java
 // Spring 4.3 Code
