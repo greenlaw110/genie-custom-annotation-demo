@@ -1,7 +1,5 @@
 # Genie Custom Annotation Demo
 
-This example shows how you can use the [Genie](https://github.com/osglworks/java-di) to implement Spring 4.3 Custom annotation Like feature
-
 Nicky Moelholm has a [blog](https://moelholm.com/2016/10/15/spring-4-3-custom-annotations/) talking about how to 
 customise annotation in Spring 4.3 application. I am curious to see how can I get the samething done using 
 [Genie](https://github.com/osglworks/java-di). So it comes up with this project, which is literally a rewrite of
